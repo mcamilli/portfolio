@@ -22,14 +22,12 @@ const About = () => {
         </div>  
         <div className='about-achievements'>
             <div className="about-achievement">
-                <h1>10 + </h1>
-                
+                <h1>10 + </h1>                
                 <p>Years of beekeeping experience</p>
             </div>     
             <hr/>        
             <div className="about-achievement">
-                <h1> 10 </h1>
-                
+                <h1> 10 </h1>                
                 <p> Years on honey bee research experience </p>
             </div>     
             <hr/>       
