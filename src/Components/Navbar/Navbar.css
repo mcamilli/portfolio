@@ -35,3 +35,8 @@
     height: 80px;
     width: 80px;
 }
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}

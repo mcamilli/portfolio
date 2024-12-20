@@ -4,7 +4,7 @@ import profile_img from '../../assets/profile2.jpg'
 
 const Header = () => {
   return (
-    <div className='header'>
+    <div id = 'home' className='header'>
       <img src={profile_img} alt=''/>
       <h1> <span>I`m Marcelo Camilli</span> Title</h1>
       <p> Description here  </p>

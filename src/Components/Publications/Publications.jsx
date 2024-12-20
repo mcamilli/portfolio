@@ -6,7 +6,7 @@ import PublicationsData from '../../assets/publications'
 
 const Publications = () => {
   return (
-    <div className='publications'>
+    <div id = 'publications' className='publications'>
         <div className="publications-title">
             <h1>Publications</h1>
             <img src={logo2} alt=''/>
