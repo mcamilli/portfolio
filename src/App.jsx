@@ -2,7 +2,8 @@ import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Header from './Components/Header/header'
 import About from './Components/About/About'
-import Services from './Components/Sevices/Services'
+import Publications from './Components/Publications/Publications'
+import Contact from './Components/Contact/Contact'
 
 const App = () => {
   return (
@@ -10,8 +11,8 @@ const App = () => {
       <Navbar/>
       <Header/>
       <About/>
-      <Services/>
-        
+      <Publications/>
+      <Contact/>
     </div>
   )
 }

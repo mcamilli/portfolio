@@ -1,10 +1,10 @@
 import React from 'react'
-import "./Services.css"
+import "./Publications.css"
 import logo2 from '../../assets/logo2.png'
 import PublicationsData from '../../assets/publications'
 
 
-const Services = () => {
+const Publications = () => {
   return (
     <div className='publications'>
         <div className="publications-title">
@@ -27,4 +27,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Publications
