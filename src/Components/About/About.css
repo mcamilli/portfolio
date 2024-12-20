@@ -11,10 +11,20 @@
     position: relative;
 }
 
+.about-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 80px;
+    height: 80px;
+}
+
 .about-title h1{
     padding: 0px, 30px;
     font-size: 60px;
     font-weight: 400;
+    margin-right: 75px;
 }
 
 .about-sections{
@@ -48,9 +58,10 @@
     margin-bottom: 80px;
     gap: 10px;
     transition: 0.5s;
+    margin-top: 400px;
 }
 
-.about-achievements h1{
+.about-achievements h1{    
     font-size: 60px;
     font-weight: 700;
     background: linear-gradient(270deg, #ffd311 10%, #FA8128 100%);
