@@ -25,11 +25,11 @@ const Navbar = () => {
         <img src={openImg} onClick={openMenu} alt='' className='nav-mob-open'/>
         <ul ref={menuRef} className='nav-menu'>
             <img src={closeImg} onClick={closeMenu} alt='' className='nav-mob-close'/>
-            <li><AnchorLink className='anchor-link' href='#home'><p onClick={()=>setMenu ("home")}>Home</p></AnchorLink></li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>setMenu ("about")}>About me</p></AnchorLink> </li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#publications'><p onClick={()=>setMenu ("publications")}>Publications</p></AnchorLink> </li>
+            <li><AnchorLink className='anchor-link' href='#home'><p onClick={()=> ("home")}>Home</p></AnchorLink></li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=> ("about")}>About me</p></AnchorLink> </li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#publications'><p onClick={()=> ("publications")}>Publications</p></AnchorLink> </li>
         </ul>
-        <div className='nav-connect'><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setMenu ("contact")}>Connect with me</p></AnchorLink></div>
+        <div className='nav-connect'><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=> ("contact")}>Connect with me</p></AnchorLink></div>
       
     </div>
   )

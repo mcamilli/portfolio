@@ -9,24 +9,25 @@ import phone from '../../assets/phone_icon.png'
 const Contact = () => {
     const onSubmit = async (event) => {
         event.preventDefault();
-        setResult("Sending....");
         const formData = new FormData(event.target);
     
         formData.append("access_key", "c711a647-3f29-4fd7-bbb4-5232895e061d");
     
-        const response = await fetch("https://api.web3forms.com/submit", {
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        const res = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
-          body: formData
-        });
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: json
+        }).then((res) => res.json());
     
-        const data = await response.json();
-    
-        if (data.success) {
-          setResult("Form Submitted Successfully");
-          event.target.reset();
-        } else {
-          console.log("Error", data);
-          setResult(data.message);
+        if (res.success) {
+          console.log("Success", res);
+          event.target.reset()
         }
       };
     

@@ -76,9 +76,8 @@
 
 @media (max-width:768px){
     .publications{
-        align-items: start;
+        align-items: center;
         gap: 70px;
-        margin: 20px, 30px;
     }
 
     .publications-title h1 {
