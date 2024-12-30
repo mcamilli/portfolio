@@ -5,8 +5,32 @@ import email from '../../assets/email_icon.png'
 import insta from '../../assets/insta_icon.png'
 import phone from '../../assets/phone_icon.png'
 
+
 const Contact = () => {
-  return (
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", "c711a647-3f29-4fd7-bbb4-5232895e061d");
+    
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+    
+        const data = await response.json();
+    
+        if (data.success) {
+          setResult("Form Submitted Successfully");
+          event.target.reset();
+        } else {
+          console.log("Error", data);
+          setResult(data.message);
+        }
+      };
+    
+  return (    
     <div id='contact' className='contact'>
         <div className="contact-title">
             <h1>Get in touch</h1>
@@ -27,7 +51,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <form className="contact-right">
+            <form onSubmit={onSubmit} className="contact-right">
                 <label htmlFor=''>Your Name</label>
                 <input type="text" placeholder='Enter your name' name='name' />
                 <label htmlFor=''>Your E-mail</label>
