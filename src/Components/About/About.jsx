@@ -17,8 +17,12 @@ const About = () => {
         </div>  
             <div className='about-right'>
                 <div className='about-para'>
-                    <p>Detail ahsiuah iuahi hsaiu hsiahs iahso ajlskja lkj 
-                    Detail ahsiuah iuahi hsaiu hsiahs iahso ajlskja lkj sajs
+                    <p>Driven by curiosity and a passion for sharing knowledge, my journey with honey bees started when I began beekeeping with my grandfather. 
+                        This early exposure inspired me to pursue biology and led me to realize that researching honey bees was a natural extension of my interests. 
+                        Consequently, I completed my Masters and PhD, both focused on honey bees. 
+                        Alongside my academic research, I have also been teaching, and I have learned as much as I have taught. 
+                    </p>
+                    <p>As an IT enthusiast, I also have experience using GIS, Linux, R, Javascript, CSS, ReactJs, NextJs, REST APIs, GIT, and Clojure.
                     </p>
                 <div className='about-achievements'>
                 <div className="about-achievement">

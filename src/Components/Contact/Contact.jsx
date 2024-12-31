@@ -10,6 +10,13 @@ const Contact = () => {
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
+
+        for (let [key, value] of formData.entries()) {
+            if (!value.trim()) {
+              alert("Please fill in all fields.");
+              return; 
+            }
+          }
     
         formData.append("access_key", "c711a647-3f29-4fd7-bbb4-5232895e061d");
     

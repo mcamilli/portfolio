@@ -5,6 +5,13 @@ import PublicationsData from '../../assets/publications'
 
 
 const Publications = () => {
+    
+    const openLink = (link) => {
+        console.log(link); 
+        window.open(link, '_blank');
+      };
+    
+
   return (
     <div id = 'publications' className='publications'>
         <div className="publications-title">
@@ -18,8 +25,7 @@ const Publications = () => {
                     <h2>{publication.p_title}</h2>
                     <p>{publication.p_desc}</p>
                     <div className='publications-readmore'/>
-                    <p>Read More</p>
-
+                    <p onClick={() => openLink(publication.p_link)} >  Read More</p>
                 </div>
             })}
         </div>
